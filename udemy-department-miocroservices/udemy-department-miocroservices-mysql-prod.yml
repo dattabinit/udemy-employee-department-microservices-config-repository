@@ -1,15 +1,13 @@
 spring:
   database:
-    driverClassName: com.mysql.jdbc.Driver
-
-spring:
+    driverClassName: "com.mysql.jdbc.Driver"
   datasource:
-    url: jdbc:mysql://localhost/empdept
-    username: root
-    password: root
-    validationQuery: SELECT 1
+    url: "jdbc:mysql://localhost/empdept"
+    username: "root"
+    password: "root"
+    validationQuery: "SELECT 1"
   jpa:
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-        ddl-auto: update
+        dialect: "org.hibernate.dialect.MySQL5InnoDBDialect"
+        ddl-auto: "update"
